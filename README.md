@@ -27,7 +27,7 @@ Unser Ziel ist es, durch unsere Teilnahme an diesem Wettbewerb nicht nur unser W
 
 ## Dokumentation
 
-In unserem Dokumentationsverzeichnis findest du detaillierte Informationen zu unserem Roboter, dessen Platine 
+In unserem Dokumentationsverzeichnis findest du detaillierte Informationen zu unserem Roboter.
 
 ## Teamplakat
 
