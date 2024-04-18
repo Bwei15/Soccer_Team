@@ -4,12 +4,25 @@
 
 Herzlich willkommen zur offiziellen GitHub-Seite von den Team I-Bots 8! Hier findest du eine umfassende Dokumentation über unseren Roboter, Bilder, Informationen über unser Team und den Code, den wir entwickelt haben.
 
-[Unsere Dokumentation](https://github.com/Bwei15/Soccer_Team/blob/main/I-bots%208_Robocub%20DM%202024_Dokumentation.pdf)
+
+
+
+
+
+> [!IMPORTANT]
+> ### Wichtige Dokumente:
+> 
+>
+> [Dokumentation](https://github.com/Bwei15/Soccer_Team/blob/main/I-bots%208_Robocub%20DM%202024_Dokumentation.pdf)
+> 
+> [Plakat](https://github.com/Bwei15/Soccer_Team/blob/main/I-bots%208_Robocup%20DM%202024_%20Plakat.pdf)
+
+
 
 
 ## Über uns
 
-Wir sind eine Gruppe von Schülern, die an der Roberta-Initiative in Hannover teilnehmen. 
+Wir sind eine Gruppe von Schülern, vom Roboter RegioZentrum in Hannover. 
 Unser Ziel ist es, durch unsere Teilnahme an diesem Wettbewerb nicht nur unser Wissen und unsere Fähigkeiten in der Robotik zu erweitern, sondern auch wertvolle Erfahrungen im Bereich Robotik zu sammeln.
 
 ## Dokumentation
