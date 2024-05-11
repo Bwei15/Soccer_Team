@@ -91,7 +91,7 @@ const uint motorVRpin[] = { 10, 5, 2 };  // CCW1, CW1, PWM1 //VR  HR
 const uint motorVLpin[] = { 6, 11, 3 };  // CCW2, CW2, PWM2 //VL
 const uint motorHRpin[] = { 9, 12, 4 };  // CCW3, CW3, PWM3 //hinten
 const int motorOnOffPin = 30;            // ON/OFF-Pin for motor control
-                                         //-------------------------------------------------------
+                                         
 int SrfFront = 0;
 int SrfRight = 0;
 int SrfBall = 0;
@@ -187,62 +187,26 @@ void loop() {
   Serial.println(SrfBall);
 
   int angle = ballPosition();
-  //Serial.print(angle);
+
 
   int ball = ballerkennung(SrfBall, strength0, def_s_ball);
   Serial.println(ball);
   float speed;
 
 
-  // if (ball == 1) {
-  //   speed = botspeed;
-  // } else if ((strength0 > 100)&&(ball != 1)) {
-  //   speed = (botspeed + 120) - strength0;
-  // } else if(ball != 1){
-  //   speed = botspeed - strength0;
-  // }
-  // if((angle != 0)&&(strength0 > 100)){
-  //   speed =  (botspeed + 140) - (strength0);
-  // }else{
+  
   if (angle == 180) {
     speed = botspeed + 15;
   } else {
     speed = botspeed;
   }
-  // }
 
 
-  // float hoch = hochheben();
-  // if (hoch < 9.55) {
-  //   pause = true;
-  // }
-  //------anpassen des rückwertsfahren---
 
-  // if (angle == 0 && def_s_hinten == false) {
-  //   if (SrfHinten < 65) {
-  //     speed = SrfHinten * 1.5;
-  //   } else {
-  //     speed = (botspeed - 10);
+   float hoch = hochheben();
+   if (hoch < 9.55) {
+     pause = true;
 
-  //   }
-  // }
-
-  //----------------------------------
-
-  //--------zum Tor drehen-------
-  /*
-  bool ecke = false;
-  if ((SrfFront < 10)&&(strength0 > 135)) {
-    ecke = true;
-  } else if ((strength0 < 135)||(SrfFront > 10)) {
-    ecke = false;
-  }
-  if ((angle == 0) && (ball == 1) && (ecke == true)) {
-    ad_drehung == 20;
-    angle = 20;
-  } 
-*/
-  //---------------------------
 
   currentInput = getDegrees();  // Lese den aktuellen Gyro-Wert
   PD(currentInput, &previousInput, &pdOutput, &lastUpdateTime, timeStep, proportionalGain, differentialGain);
